@@ -1,0 +1,21 @@
+<IfModule mod_rewrite.c>
+RewriteEngine on
+
+## Blacklisted
+RewriteRule ^pages/?$ index.php [L,NC]
+RewriteRule ^config.json$ index.php [L,NC]
+
+## Whitelisted
+RewriteRule ${REQUEST_FILENAME} -f
+RewriteRule ${REQUEST_FILENAME} !/.well-known/*
+RewriteRule ${REQUEST_FILENAME} !/themes/.*/assets/.*
+
+## Block all but index PHP files
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteCond %{REQUEST_FILENAME} \.php$
+RewriteRule !^index.php index.php [L,NC]
+
+## Process all other routes
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^ index.php [L]
+</IfModule>
