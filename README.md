@@ -1,11 +1,11 @@
 # Jerpy
 
-## Getting Started
 Jerpy is a ridiculuously simple, flat-file CMS that leverages the out-of-the-box features of PHP to produce manageable websites in just a 2 file system.
 
-To manage Jerpy's configuration, just edit the `config.json` in the root directory.
+## Getting Started
+Just upload the files to your web root. If you want to upload to a subdirectory, make sure to update the `base` property in the `config.json` (See *Config Options* section).
 
-To add pages, create new .html or .php files in the `/pages` directory, and then add a route entry to the `pageRoutes` config property.
+To add pages, create new .html or .php files in the `/pages` directory, and then add a route entry to the `pageRoutes` config property (See *Page Routes* section).
 
 To edit the default template, or make a new one, just manage the files under the `/themes` directory (See *Themes* section). To change the theme, set the `theme` config property to the name of the theme folder you want to use.
 
