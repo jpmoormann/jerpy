@@ -1,0 +1,13 @@
+body {
+  font-family: Arial, sans-serif;
+  max-width: 960px;
+  margin: 0 auto;
+}
+header,
+main {
+  padding: 0.75em 0;
+}
+nav > a {
+  display: inline-block;
+  padding: 5px;
+}
