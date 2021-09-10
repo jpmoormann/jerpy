@@ -4,17 +4,15 @@
     "theme": "default",
     "cacheLimit": 18000,
     "pageRoutes": {
-        "\/": {
+        "/": {
             "title": "Welcome!",
             "file": "home.php",
             "ogTags": {
                 "title": "Welcome to Website.com",
                 "description": "Find out more now!",
-                "image": "https:\/\/media.istockphoto.com\/vectors\/flag-ribbon-welcome-old-school-flag-banner-vector-id1223088904?k=20&m=1223088904&s=612x612&w=0&h=b_ilJpFTSQbZeCrZusHRLEskmfiONWH0hFASAJbgz9g=",
-                "url": "https:\/\/gingerteksolutions.com\/test"
             }
         },
-        "\/sub\/page": {
+        "/sub/page": {
             "title": "Sub Page",
             "file": "subpage.php"
         }
