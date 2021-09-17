@@ -2,6 +2,8 @@
 
 Jerpy is a ridiculuously simple, flat-file CMS that leverages the out-of-the-box features of PHP to produce manageable websites in just a 2 file system.
 
+*For nginx installs, you'll need to add a new location entry in your .conf to redirect everything after your directory to the index.php*
+
 ## Getting Started
 Just upload the files to your web root. If you want to upload to a subdirectory, make sure to update the `base` property in the `config.json` (See *Config Options* section).
 
